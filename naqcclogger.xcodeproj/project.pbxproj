@@ -1,0 +1,518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		16717AB71BB796E6005B0D75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16717AB61BB796E6005B0D75 /* AppDelegate.swift */; };
+		16717AB91BB796E6005B0D75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16717AB81BB796E6005B0D75 /* ViewController.swift */; };
+		16717ABB1BB796E6005B0D75 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16717ABA1BB796E6005B0D75 /* Document.swift */; };
+		16717ABE1BB796E6005B0D75 /* Document.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 16717ABC1BB796E6005B0D75 /* Document.xcdatamodeld */; };
+		16717AC01BB796E6005B0D75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16717ABF1BB796E6005B0D75 /* Assets.xcassets */; };
+		16717AC31BB796E6005B0D75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16717AC11BB796E6005B0D75 /* Main.storyboard */; };
+		16717ACE1BB796E6005B0D75 /* naqccloggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16717ACD1BB796E6005B0D75 /* naqccloggerTests.swift */; };
+		16717AD91BB796E6005B0D75 /* naqccloggerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16717AD81BB796E6005B0D75 /* naqccloggerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		16717ACA1BB796E6005B0D75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16717AAB1BB796E6005B0D75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16717AB21BB796E6005B0D75;
+			remoteInfo = naqcclogger;
+		};
+		16717AD51BB796E6005B0D75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16717AAB1BB796E6005B0D75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16717AB21BB796E6005B0D75;
+			remoteInfo = naqcclogger;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		16717AB31BB796E6005B0D75 /* naqcclogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = naqcclogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		16717AB61BB796E6005B0D75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		16717AB81BB796E6005B0D75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		16717ABA1BB796E6005B0D75 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		16717ABD1BB796E6005B0D75 /* Document.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Document.xcdatamodel; sourceTree = "<group>"; };
+		16717ABF1BB796E6005B0D75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		16717AC21BB796E6005B0D75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		16717AC41BB796E6005B0D75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16717AC91BB796E6005B0D75 /* naqccloggerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = naqccloggerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		16717ACD1BB796E6005B0D75 /* naqccloggerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = naqccloggerTests.swift; sourceTree = "<group>"; };
+		16717ACF1BB796E6005B0D75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16717AD41BB796E6005B0D75 /* naqccloggerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = naqccloggerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		16717AD81BB796E6005B0D75 /* naqccloggerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = naqccloggerUITests.swift; sourceTree = "<group>"; };
+		16717ADA1BB796E6005B0D75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		16717AB01BB796E6005B0D75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16717AC61BB796E6005B0D75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16717AD11BB796E6005B0D75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16717AAA1BB796E6005B0D75 = {
+			isa = PBXGroup;
+			children = (
+				16717AB51BB796E6005B0D75 /* naqcclogger */,
+				16717ACC1BB796E6005B0D75 /* naqccloggerTests */,
+				16717AD71BB796E6005B0D75 /* naqccloggerUITests */,
+				16717AB41BB796E6005B0D75 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		16717AB41BB796E6005B0D75 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				16717AB31BB796E6005B0D75 /* naqcclogger.app */,
+				16717AC91BB796E6005B0D75 /* naqccloggerTests.xctest */,
+				16717AD41BB796E6005B0D75 /* naqccloggerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		16717AB51BB796E6005B0D75 /* naqcclogger */ = {
+			isa = PBXGroup;
+			children = (
+				16717AB61BB796E6005B0D75 /* AppDelegate.swift */,
+				16717AB81BB796E6005B0D75 /* ViewController.swift */,
+				16717ABA1BB796E6005B0D75 /* Document.swift */,
+				16717ABF1BB796E6005B0D75 /* Assets.xcassets */,
+				16717AC11BB796E6005B0D75 /* Main.storyboard */,
+				16717AC41BB796E6005B0D75 /* Info.plist */,
+				16717ABC1BB796E6005B0D75 /* Document.xcdatamodeld */,
+			);
+			path = naqcclogger;
+			sourceTree = "<group>";
+		};
+		16717ACC1BB796E6005B0D75 /* naqccloggerTests */ = {
+			isa = PBXGroup;
+			children = (
+				16717ACD1BB796E6005B0D75 /* naqccloggerTests.swift */,
+				16717ACF1BB796E6005B0D75 /* Info.plist */,
+			);
+			path = naqccloggerTests;
+			sourceTree = "<group>";
+		};
+		16717AD71BB796E6005B0D75 /* naqccloggerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				16717AD81BB796E6005B0D75 /* naqccloggerUITests.swift */,
+				16717ADA1BB796E6005B0D75 /* Info.plist */,
+			);
+			path = naqccloggerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		16717AB21BB796E6005B0D75 /* naqcclogger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16717ADD1BB796E6005B0D75 /* Build configuration list for PBXNativeTarget "naqcclogger" */;
+			buildPhases = (
+				16717AAF1BB796E6005B0D75 /* Sources */,
+				16717AB01BB796E6005B0D75 /* Frameworks */,
+				16717AB11BB796E6005B0D75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = naqcclogger;
+			productName = naqcclogger;
+			productReference = 16717AB31BB796E6005B0D75 /* naqcclogger.app */;
+			productType = "com.apple.product-type.application";
+		};
+		16717AC81BB796E6005B0D75 /* naqccloggerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16717AE01BB796E6005B0D75 /* Build configuration list for PBXNativeTarget "naqccloggerTests" */;
+			buildPhases = (
+				16717AC51BB796E6005B0D75 /* Sources */,
+				16717AC61BB796E6005B0D75 /* Frameworks */,
+				16717AC71BB796E6005B0D75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				16717ACB1BB796E6005B0D75 /* PBXTargetDependency */,
+			);
+			name = naqccloggerTests;
+			productName = naqccloggerTests;
+			productReference = 16717AC91BB796E6005B0D75 /* naqccloggerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		16717AD31BB796E6005B0D75 /* naqccloggerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16717AE31BB796E6005B0D75 /* Build configuration list for PBXNativeTarget "naqccloggerUITests" */;
+			buildPhases = (
+				16717AD01BB796E6005B0D75 /* Sources */,
+				16717AD11BB796E6005B0D75 /* Frameworks */,
+				16717AD21BB796E6005B0D75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				16717AD61BB796E6005B0D75 /* PBXTargetDependency */,
+			);
+			name = naqccloggerUITests;
+			productName = naqccloggerUITests;
+			productReference = 16717AD41BB796E6005B0D75 /* naqccloggerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		16717AAB1BB796E6005B0D75 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Eric Ross";
+				TargetAttributes = {
+					16717AB21BB796E6005B0D75 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					16717AC81BB796E6005B0D75 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 16717AB21BB796E6005B0D75;
+					};
+					16717AD31BB796E6005B0D75 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 16717AB21BB796E6005B0D75;
+					};
+				};
+			};
+			buildConfigurationList = 16717AAE1BB796E6005B0D75 /* Build configuration list for PBXProject "naqcclogger" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 16717AAA1BB796E6005B0D75;
+			productRefGroup = 16717AB41BB796E6005B0D75 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				16717AB21BB796E6005B0D75 /* naqcclogger */,
+				16717AC81BB796E6005B0D75 /* naqccloggerTests */,
+				16717AD31BB796E6005B0D75 /* naqccloggerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		16717AB11BB796E6005B0D75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16717AC01BB796E6005B0D75 /* Assets.xcassets in Resources */,
+				16717AC31BB796E6005B0D75 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16717AC71BB796E6005B0D75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16717AD21BB796E6005B0D75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		16717AAF1BB796E6005B0D75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16717ABE1BB796E6005B0D75 /* Document.xcdatamodeld in Sources */,
+				16717AB91BB796E6005B0D75 /* ViewController.swift in Sources */,
+				16717AB71BB796E6005B0D75 /* AppDelegate.swift in Sources */,
+				16717ABB1BB796E6005B0D75 /* Document.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16717AC51BB796E6005B0D75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16717ACE1BB796E6005B0D75 /* naqccloggerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16717AD01BB796E6005B0D75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16717AD91BB796E6005B0D75 /* naqccloggerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		16717ACB1BB796E6005B0D75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16717AB21BB796E6005B0D75 /* naqcclogger */;
+			targetProxy = 16717ACA1BB796E6005B0D75 /* PBXContainerItemProxy */;
+		};
+		16717AD61BB796E6005B0D75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16717AB21BB796E6005B0D75 /* naqcclogger */;
+			targetProxy = 16717AD51BB796E6005B0D75 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		16717AC11BB796E6005B0D75 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16717AC21BB796E6005B0D75 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		16717ADB1BB796E6005B0D75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		16717ADC1BB796E6005B0D75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		16717ADE1BB796E6005B0D75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = naqcclogger/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kb7td.naqcclogger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		16717ADF1BB796E6005B0D75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = naqcclogger/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kb7td.naqcclogger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		16717AE11BB796E6005B0D75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = naqccloggerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kb7td.naqccloggerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/naqcclogger.app/Contents/MacOS/naqcclogger";
+			};
+			name = Debug;
+		};
+		16717AE21BB796E6005B0D75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = naqccloggerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kb7td.naqccloggerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/naqcclogger.app/Contents/MacOS/naqcclogger";
+			};
+			name = Release;
+		};
+		16717AE41BB796E6005B0D75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = naqccloggerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kb7td.naqccloggerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = naqcclogger;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		16717AE51BB796E6005B0D75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = naqccloggerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kb7td.naqccloggerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = naqcclogger;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		16717AAE1BB796E6005B0D75 /* Build configuration list for PBXProject "naqcclogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16717ADB1BB796E6005B0D75 /* Debug */,
+				16717ADC1BB796E6005B0D75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16717ADD1BB796E6005B0D75 /* Build configuration list for PBXNativeTarget "naqcclogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16717ADE1BB796E6005B0D75 /* Debug */,
+				16717ADF1BB796E6005B0D75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		16717AE01BB796E6005B0D75 /* Build configuration list for PBXNativeTarget "naqccloggerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16717AE11BB796E6005B0D75 /* Debug */,
+				16717AE21BB796E6005B0D75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		16717AE31BB796E6005B0D75 /* Build configuration list for PBXNativeTarget "naqccloggerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16717AE41BB796E6005B0D75 /* Debug */,
+				16717AE51BB796E6005B0D75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		16717ABC1BB796E6005B0D75 /* Document.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				16717ABD1BB796E6005B0D75 /* Document.xcdatamodel */,
+			);
+			currentVersion = 16717ABD1BB796E6005B0D75 /* Document.xcdatamodel */;
+			path = Document.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 16717AAB1BB796E6005B0D75 /* Project object */;
+}
