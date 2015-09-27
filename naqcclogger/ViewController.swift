@@ -11,31 +11,42 @@ import Cocoa
 
 class ViewController: NSViewController {
 
+    
+    func alert(msg: String){
+        dispatch_sync(dispatch_get_main_queue(), { () -> Void in
+            let alert = NSAlert()
+            alert.messageText = "Error downloading database"
+            alert.informativeText = msg
+            alert.addButtonWithTitle("Ok")
+            alert.runModal()
+        })
+
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let url = NSURL(string: "http://www.naqcc.info/mac_naqcc_mems.zip")!
+        let urlstr = "http://www.kb7td.com/mac_naqcc_mems.zip"
+        //let urlstr = "http://www.naqcc.info/mac_naqcc_mems.zip"
+        let url = NSURL(string: urlstr)!
         
         let task = NSURLSession.sharedSession().downloadTaskWithURL(url) { (data, response, error) -> Void in
         
+            if let err = error{
+                self.alert(err.localizedDescription+":  "+urlstr)
+            } else {
             if let file = data as NSURL!{
                 let path = file.path as String!
-            
+                print(path)
                 let fm = NSFileManager.defaultManager()
                 if fm.fileExistsAtPath(path) {
+                    let topath = "/Users/ericr/Desktop/naqcc.zip"
                     do {
                         
-                        try fm.moveItemAtPath(path, toPath: "/Users/ericr/Desktop/naqcc.zip")
+                        try fm.moveItemAtPath(path, toPath: topath)
                     } catch let error as NSError{
-                        dispatch_sync(dispatch_get_main_queue(), { () -> Void in
-                            let alert = NSAlert()
-                            alert.messageText = "Error downloading database"
-                            alert.informativeText = error.localizedDescription
-                            alert.addButtonWithTitle("Ok")
-                            alert.runModal()
-                        })
-                                            }
+                        self.alert(error.localizedDescription+":  "+topath)
+                    }                    
                 }
+            }
             }
         }
         task.resume()
