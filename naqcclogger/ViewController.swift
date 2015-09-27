@@ -8,10 +8,32 @@
 
 import Cocoa
 
+
 class ViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let url = NSURL(string: "http://www.naqcc.info/mac_naqcc_mems.zip")!
+        
+        let task = NSURLSession.sharedSession().downloadTaskWithURL(url) { (data, response, error) -> Void in
+        
+            if let file = data as NSURL!{
+                let path = file.path as String!
+            
+                let fm = NSFileManager.defaultManager()
+                if fm.fileExistsAtPath(path) {
+                    do {
+                        
+                        try fm.moveItemAtPath(path, toPath: "/Users/ericr/Desktop/naqcc.zip")
+                    } catch {
+                        print("error occurred")
+                    }
+                }
+            }
+        }
+        task.resume()
+        //print(NSTemporaryDirectory())
 
         // Do any additional setup after loading the view.
     }
