@@ -27,8 +27,14 @@ class ViewController: NSViewController {
                         
                         try fm.moveItemAtPath(path, toPath: "/Users/ericr/Desktop/naqcc.zip")
                     } catch let error as NSError{
-                        print(error.localizedDescription)
-                    }
+                        dispatch_sync(dispatch_get_main_queue(), { () -> Void in
+                            let alert = NSAlert()
+                            alert.messageText = "Error downloading database"
+                            alert.informativeText = error.localizedDescription
+                            alert.addButtonWithTitle("Ok")
+                            alert.runModal()
+                        })
+                                            }
                 }
             }
         }
