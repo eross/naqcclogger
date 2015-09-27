@@ -22,6 +22,25 @@ class ViewController: NSViewController {
         })
 
     }
+    
+    func unpackdb(file: NSURL?) -> String
+    {
+        if let file = file as NSURL!{
+            let path = file.path as String!
+            let fm = NSFileManager.defaultManager()
+            if fm.fileExistsAtPath(path) {
+                let topath = "/Users/ericr/Desktop/naqcc.zip"
+                do {
+                    
+                    try fm.moveItemAtPath(path, toPath: topath)
+                } catch let error as NSError{
+                    self.alert(error.localizedDescription+":  "+topath)
+                }
+            }
+        }
+
+        return "f"
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         let urlstr = "http://www.kb7td.com/mac_naqcc_mems.zip"
@@ -33,20 +52,8 @@ class ViewController: NSViewController {
             if let err = error{
                 self.alert(err.localizedDescription+":  "+urlstr)
             } else {
-            if let file = data as NSURL!{
-                let path = file.path as String!
-                print(path)
-                let fm = NSFileManager.defaultManager()
-                if fm.fileExistsAtPath(path) {
-                    let topath = "/Users/ericr/Desktop/naqcc.zip"
-                    do {
-                        
-                        try fm.moveItemAtPath(path, toPath: topath)
-                    } catch let error as NSError{
-                        self.alert(error.localizedDescription+":  "+topath)
-                    }                    
-                }
-            }
+                let ret = self.unpackdb(data)
+                print(ret)
             }
         }
         task.resume()
