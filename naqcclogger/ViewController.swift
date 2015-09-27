@@ -26,8 +26,8 @@ class ViewController: NSViewController {
                     do {
                         
                         try fm.moveItemAtPath(path, toPath: "/Users/ericr/Desktop/naqcc.zip")
-                    } catch {
-                        print("error occurred")
+                    } catch let error as NSError{
+                        print(error.localizedDescription)
                     }
                 }
             }
