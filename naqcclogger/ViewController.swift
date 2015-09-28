@@ -28,14 +28,18 @@ class ViewController: NSViewController {
         if let file = file as NSURL!{
             let path = file.path as String!
             let fm = NSFileManager.defaultManager()
-            if fm.fileExistsAtPath(path) {
-                let topath = "/Users/ericr/Desktop/naqcc.zip"
-                do {
-                    
-                    try fm.moveItemAtPath(path, toPath: topath)
-                } catch let error as NSError{
-                    self.alert(error.localizedDescription+":  "+topath)
-                }
+            let dir = NSString(string: path).stringByDeletingLastPathComponent
+            
+            let task = NSTask()
+            task.launchPath = "/usr/bin/unzip"
+            print("Unzipping \(path)")
+            task.arguments = ["-d\(dir)",path, "mac_naqcc_mems.csv"]
+            task.launch()
+            task.waitUntilExit()
+            let status = task.terminationStatus
+            
+            if status != 0 {
+                print("Error: status = \(status)")
             }
         }
 
