@@ -595,6 +595,7 @@
                                                 <action selector="runToolbarCustomizationPalette:" target="Ady-hI-5gd" id="pQI-g3-MTW"/>
                                             </connections>
                                         </menuItem>
+                                        <menuItem title="Reload Database" keyEquivalent="r" id="Tb0-fs-30z"/>
                                     </items>
                                 </menu>
                             </menuItem>

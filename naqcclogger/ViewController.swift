@@ -26,39 +26,51 @@ class ViewController: NSViewController {
     func unpackdb(file: NSURL?) -> String?
     {
         if let file = file as NSURL!{
+            let csvfile = "mac_naqcc_mems.csv"
             let path = file.path as String!
             let dir = NSString(string: path).stringByDeletingLastPathComponent
             
             let task = NSTask()
+            let output = NSPipe()
+            task.standardOutput = output
+            task.standardOutput = output
+            
             task.launchPath = "/usr/bin/unzip"
-            task.arguments = ["-fod\(dir)",path, "mac_naqcc_mems.csv"]
+            task.arguments = ["-fod\(dir)",path, csvfile]
             task.launch()
+            
+            let fileHandle = output.fileHandleForReading
+            let data = fileHandle.readDataToEndOfFile()
+            
+            // TBD:  setup timer to kill if it hangs
             task.waitUntilExit()
             let status = task.terminationStatus
-            
+            let datastr = NSString(data: data, encoding: NSUTF8StringEncoding)
             if status != 0 {
                 print("Error: status = \(status)")
+                if let datastr = datastr {
+                    NSLog(datastr as String)
+                }
                 return nil
             } else {
-                return "\(dir)/mac_naqcc_mems.csv"
+                return "\(dir)/\(csvfile)"
             }
+        } else {
+            return nil
         }
-
-        return "f"
     }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        let urlstr = "http://www.kb7td.com/mac_naqcc_mems.zip"
+    
+    func updatedb(urlstr: String){
         //let urlstr = "http://www.naqcc.info/mac_naqcc_mems.zip"
         let url = NSURL(string: urlstr)!
         
         let task = NSURLSession.sharedSession().downloadTaskWithURL(url) { (data, response, error) -> Void in
-        
+            
             if let err = error{
                 self.alert(err.localizedDescription+":  "+urlstr)
             } else {
                 if let csvfile = self.unpackdb(data){
-                    print(csvfile)
+                    NSLog("\(csvfile) has been retrieved")
                 } else {
                     self.alert("Could not download database for NAQCC at\n\(urlstr).\nFile missing or bad format.")
                 }
@@ -66,9 +78,10 @@ class ViewController: NSViewController {
             }
         }
         task.resume()
-        //print(NSTemporaryDirectory())
-
-        // Do any additional setup after loading the view.
+    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        updatedb("http://www.kb7td.com/mac_naqcc_mems.zip")
     }
 
     override var representedObject: AnyObject? {
