@@ -14,6 +14,7 @@
 		16717AC31BB796E6005B0D75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16717AC11BB796E6005B0D75 /* Main.storyboard */; };
 		16717ACE1BB796E6005B0D75 /* naqccloggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16717ACD1BB796E6005B0D75 /* naqccloggerTests.swift */; };
 		16717AD91BB796E6005B0D75 /* naqccloggerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16717AD81BB796E6005B0D75 /* naqccloggerUITests.swift */; };
+		16717AF01BB8EC3A005B0D75 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16717AEF1BB8EC3A005B0D75 /* Member.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		16717AD41BB796E6005B0D75 /* naqccloggerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = naqccloggerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16717AD81BB796E6005B0D75 /* naqccloggerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = naqccloggerUITests.swift; sourceTree = "<group>"; };
 		16717ADA1BB796E6005B0D75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16717AEF1BB8EC3A005B0D75 /* Member.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				16717ABF1BB796E6005B0D75 /* Assets.xcassets */,
 				16717AC11BB796E6005B0D75 /* Main.storyboard */,
 				16717AC41BB796E6005B0D75 /* Info.plist */,
+				16717AEF1BB8EC3A005B0D75 /* Member.swift */,
 			);
 			path = naqcclogger;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				16717AB91BB796E6005B0D75 /* ViewController.swift in Sources */,
 				16717AB71BB796E6005B0D75 /* AppDelegate.swift in Sources */,
 				16717ABB1BB796E6005B0D75 /* Document.swift in Sources */,
+				16717AF01BB8EC3A005B0D75 /* Member.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,8 +9,9 @@
 import Cocoa
 
 
-class ViewController: NSViewController {
+class ViewController: NSViewController,NSTableViewDataSource {
 
+    
     
     func alert(msg: String){
         dispatch_sync(dispatch_get_main_queue(), { () -> Void in
@@ -89,7 +90,18 @@ class ViewController: NSViewController {
         // Update the view, if already loaded.
         }
     }
+    // MARK: TableViewDataSource
+    
+    func numberOfRowsInTableView(tableView: NSTableView) -> Int {
+        return 2
+    }
+    
+    func tableView(tableView: NSTableView, objectValueForTableColumn tableColumn: NSTableColumn?, row: Int) -> AnyObject? {
+        return "Empty"
+    }
+    
+    
 
-
+ 
 }
 

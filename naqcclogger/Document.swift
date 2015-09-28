@@ -9,6 +9,8 @@
 import Cocoa
 
 class Document: NSPersistentDocument {
+    
+    var members: [Member] = []
 
     override init() {
         super.init()
@@ -30,5 +32,6 @@ class Document: NSPersistentDocument {
         let windowController = storyboard.instantiateControllerWithIdentifier("Document Window Controller") as! NSWindowController
         self.addWindowController(windowController)
     }
-
+    
+    
 }
