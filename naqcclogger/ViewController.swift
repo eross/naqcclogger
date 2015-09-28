@@ -23,23 +23,24 @@ class ViewController: NSViewController {
 
     }
     
-    func unpackdb(file: NSURL?) -> String
+    func unpackdb(file: NSURL?) -> String?
     {
         if let file = file as NSURL!{
             let path = file.path as String!
-            let fm = NSFileManager.defaultManager()
             let dir = NSString(string: path).stringByDeletingLastPathComponent
             
             let task = NSTask()
             task.launchPath = "/usr/bin/unzip"
-            print("Unzipping \(path)")
-            task.arguments = ["-d\(dir)",path, "mac_naqcc_mems.csv"]
+            task.arguments = ["-fod\(dir)",path, "mac_naqcc_mems.csv"]
             task.launch()
             task.waitUntilExit()
             let status = task.terminationStatus
             
             if status != 0 {
                 print("Error: status = \(status)")
+                return nil
+            } else {
+                return "\(dir)/mac_naqcc_mems.csv"
             }
         }
 
@@ -56,8 +57,12 @@ class ViewController: NSViewController {
             if let err = error{
                 self.alert(err.localizedDescription+":  "+urlstr)
             } else {
-                let ret = self.unpackdb(data)
-                print(ret)
+                if let csvfile = self.unpackdb(data){
+                    print(csvfile)
+                } else {
+                    self.alert("Could not download database for NAQCC at\n\(urlstr).\nFile missing or bad format.")
+                }
+                
             }
         }
         task.resume()
