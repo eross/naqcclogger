@@ -8,9 +8,7 @@
 
 import Cocoa
 
-class Document: NSPersistentDocument {
-    
-    var members: [Member] = []
+class Document: NSDocument {
 
     override init() {
         super.init()

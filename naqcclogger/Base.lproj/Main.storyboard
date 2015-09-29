@@ -670,14 +670,14 @@
             <objects>
                 <viewController id="5gI-5U-AMq" customClass="ViewController" customModule="naqcclogger" customModuleProvider="target" sceneMemberID="viewController">
                     <scrollView key="view" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" id="ZSC-vo-DQP">
-                        <rect key="frame" x="0.0" y="0.0" width="411" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="411" height="303"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <clipView key="contentView" id="knV-n6-bjz">
-                            <rect key="frame" x="1" y="17" width="409" height="282"/>
+                            <rect key="frame" x="1" y="17" width="409" height="285"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="dz0-oU-YT1" viewBased="YES" id="o8i-cP-qbM">
-                                    <rect key="frame" x="0.0" y="0.0" width="409" height="282"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="409" height="285"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <size key="intercellSpacing" width="3" height="2"/>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -708,7 +708,7 @@
                                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                             </textFieldCell>
                                                             <connections>
-                                                                <binding destination="OJl-xw-6Ei" name="value" keyPath="objectValue" id="uC4-As-fkr"/>
+                                                                <binding destination="OJl-xw-6Ei" name="value" keyPath="objectValue.id" id="xVM-7S-QOC"/>
                                                             </connections>
                                                         </textField>
                                                     </subviews>
@@ -717,6 +717,9 @@
                                                     </connections>
                                                 </tableCellView>
                                             </prototypeCellViews>
+                                            <connections>
+                                                <binding destination="3pl-9o-k5b" name="value" keyPath="arrangedObjects" id="IKc-IF-q1g"/>
+                                            </connections>
                                         </tableColumn>
                                         <tableColumn width="112.015625" minWidth="40" maxWidth="1000" id="jdj-6D-YcC">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
@@ -743,7 +746,7 @@
                                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                             </textFieldCell>
                                                             <connections>
-                                                                <binding destination="CUU-dK-JLg" name="value" keyPath="objectValue" id="EaK-dp-sEy"/>
+                                                                <binding destination="CUU-dK-JLg" name="value" keyPath="objectValue.name" id="gV4-Zr-43f"/>
                                                             </connections>
                                                         </textField>
                                                     </subviews>
@@ -778,7 +781,7 @@
                                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                             </textFieldCell>
                                                             <connections>
-                                                                <binding destination="yJt-Hf-Q3l" name="value" keyPath="objectValue" id="TiX-Br-ujh"/>
+                                                                <binding destination="yJt-Hf-Q3l" name="value" keyPath="objectValue.qth" id="N5B-EY-JLp"/>
                                                             </connections>
                                                         </textField>
                                                     </subviews>
@@ -811,9 +814,13 @@
                     </scrollView>
                 </viewController>
                 <customObject id="2Tp-Fl-jBw" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-                <arrayController objectClassName="naqcclogger.Member" id="3pl-9o-k5b"/>
+                <arrayController objectClassName="naqcclogger.Member" editable="NO" id="3pl-9o-k5b">
+                    <connections>
+                        <binding destination="5gI-5U-AMq" name="contentArray" keyPath="members" id="o1t-5h-2pp"/>
+                    </connections>
+                </arrayController>
             </objects>
-            <point key="canvasLocation" x="143.5" y="722"/>
+            <point key="canvasLocation" x="143.5" y="720.5"/>
         </scene>
     </scenes>
 </document>

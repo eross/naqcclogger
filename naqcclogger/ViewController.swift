@@ -11,7 +11,7 @@ import Cocoa
 
 class ViewController: NSViewController,NSTableViewDataSource {
 
-    
+    var members: [Member] = []
     
     func alert(msg: String){
         dispatch_sync(dispatch_get_main_queue(), { () -> Void in
