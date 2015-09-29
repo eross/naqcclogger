@@ -34,7 +34,6 @@ class ViewController: NSViewController,NSTableViewDataSource {
             let task = NSTask()
             let output = NSPipe()
             task.standardOutput = output
-            task.standardOutput = output
             
             task.launchPath = "/usr/bin/unzip"
             task.arguments = ["-fod\(dir)",path, csvfile]
