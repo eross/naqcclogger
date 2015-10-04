@@ -685,7 +685,7 @@
                                     <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                     <tableColumns>
                                         <tableColumn width="116" minWidth="40" maxWidth="1000" id="oeF-34-zHy">
-                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
+                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="id">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
@@ -725,7 +725,7 @@
                                             </connections>
                                         </tableColumn>
                                         <tableColumn width="112.015625" minWidth="40" maxWidth="1000" id="jdj-6D-YcC">
-                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
+                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="name">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
@@ -762,7 +762,7 @@
                                             </prototypeCellViews>
                                         </tableColumn>
                                         <tableColumn identifier="" width="172" minWidth="10" maxWidth="3.4028234663852886e+38" id="QXW-Qy-4nK">
-                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left">
+                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="qth">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
@@ -787,7 +787,7 @@
                                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                             </textFieldCell>
                                                             <connections>
-                                                                <binding destination="yJt-Hf-Q3l" name="value" keyPath="objectValue.qth" id="N5B-EY-JLp"/>
+                                                                <binding destination="yJt-Hf-Q3l" name="value" keyPath="objectValue.qth" id="m22-zD-Ve0"/>
                                                             </connections>
                                                         </textField>
                                                     </subviews>
@@ -800,6 +800,7 @@
                                         </tableColumn>
                                     </tableColumns>
                                     <connections>
+                                        <binding destination="3pl-9o-k5b" name="content" keyPath="arrangedObjects" id="1L8-rJ-lLy"/>
                                         <outlet property="dataSource" destination="5gI-5U-AMq" id="2rx-6s-maC"/>
                                     </connections>
                                 </tableView>
@@ -832,7 +833,7 @@
                     </connections>
                 </arrayController>
             </objects>
-            <point key="canvasLocation" x="143.5" y="720.5"/>
+            <point key="canvasLocation" x="122.5" y="658.5"/>
         </scene>
     </scenes>
 </document>

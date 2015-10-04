@@ -9,9 +9,10 @@
 import Cocoa
 
 
-class ViewController: NSViewController,NSTableViewDataSource {
+class ViewController: NSViewController{
 
     var members: [Member] = []
+
     
     func alert(msg: String){
         dispatch_sync(dispatch_get_main_queue(), { () -> Void in
@@ -71,6 +72,12 @@ class ViewController: NSViewController,NSTableViewDataSource {
             } else {
                 if let csvfile = self.unpackdb(data){
                     NSLog("\(csvfile) has been retrieved")
+                    var m = Member()
+                    m.id=42
+                    m.firstname = "Adams"
+                    m.qth="UK"
+                    self.members.append(m)
+                    
                 } else {
                     self.alert("Could not download database for NAQCC at\n\(urlstr).\nFile missing or bad format.")
                 }
@@ -89,16 +96,7 @@ class ViewController: NSViewController,NSTableViewDataSource {
         // Update the view, if already loaded.
         }
     }
-    // MARK: TableViewDataSource
-    
-    func numberOfRowsInTableView(tableView: NSTableView) -> Int {
-        return 2
-    }
-    
-    func tableView(tableView: NSTableView, objectValueForTableColumn tableColumn: NSTableColumn?, row: Int) -> AnyObject? {
-        return "Empty"
-    }
-    
+        
     
 
  
