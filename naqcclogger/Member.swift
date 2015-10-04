@@ -9,7 +9,16 @@
 import Foundation
 
 class Member: NSObject {
-    var id: Int32 = 0
-    var firstname: String = ""
-    var qth: String = ""
+    var id: Int32 = 42
+    var firstname: String = "Er"
+    var qth: String = "sss"
+    
+    init(id: Int32, firstname: String, qth: String)
+    {
+        self.id = id
+        self.firstname = firstname
+        self.qth = qth
+        
+    }
+
 }

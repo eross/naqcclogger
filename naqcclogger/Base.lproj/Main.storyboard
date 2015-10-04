@@ -710,7 +710,7 @@
                                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                             </textFieldCell>
                                                             <connections>
-                                                                <binding destination="OJl-xw-6Ei" name="value" keyPath="objectValue.id" id="xVM-7S-QOC"/>
+                                                                <binding destination="OJl-xw-6Ei" name="value" keyPath="objectValue.id" id="wt2-fS-6KL"/>
                                                             </connections>
                                                         </textField>
                                                     </subviews>
@@ -801,6 +801,7 @@
                                     </tableColumns>
                                     <connections>
                                         <binding destination="3pl-9o-k5b" name="content" keyPath="arrangedObjects" id="1L8-rJ-lLy"/>
+                                        <binding destination="3pl-9o-k5b" name="selectionIndexes" keyPath="selectionIndexes" previousBinding="1L8-rJ-lLy" id="4wv-ZK-HZb"/>
                                         <outlet property="dataSource" destination="5gI-5U-AMq" id="2rx-6s-maC"/>
                                     </connections>
                                 </tableView>
@@ -809,12 +810,12 @@
                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </clipView>
                         <animations/>
-                        <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="bAa-hG-Tcg">
+                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="bAa-hG-Tcg">
                             <rect key="frame" x="1" y="284" width="449" height="15"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <animations/>
                         </scroller>
-                        <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="2ry-J2-EQj">
+                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="2ry-J2-EQj">
                             <rect key="frame" x="224" y="17" width="15" height="102"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <animations/>
@@ -829,7 +830,7 @@
                 <customObject id="2Tp-Fl-jBw" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <arrayController objectClassName="naqcclogger.Member" editable="NO" id="3pl-9o-k5b">
                     <connections>
-                        <binding destination="5gI-5U-AMq" name="contentArray" keyPath="members" id="o1t-5h-2pp"/>
+                        <binding destination="5gI-5U-AMq" name="contentArray" keyPath="self.representedObject" id="Epb-7J-VTu"/>
                     </connections>
                 </arrayController>
             </objects>
