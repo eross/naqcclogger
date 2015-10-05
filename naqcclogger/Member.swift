@@ -13,10 +13,10 @@ class Member: NSObject {
     let name: String
     let qth: String
     
-    init(id: Int32, firstname: String, qth: String)
+    init(id: Int32, name: String, qth: String)
     {
         self.id = id
-        self.name = firstname
+        self.name = name
         self.qth = qth
         
     }

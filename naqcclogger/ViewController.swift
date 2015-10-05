@@ -11,7 +11,7 @@ import Cocoa
 
 class ViewController: NSViewController{
 
-    dynamic var members: [Member] = [Member(id: 42, firstname: "Tom", qth: "Springfield")]
+    dynamic var members: [Member] = [Member(id: 42, name: "Tom", qth: "Springfield")]
     
     func alert(msg: String){
         dispatch_sync(dispatch_get_main_queue(), { () -> Void in
@@ -36,7 +36,8 @@ class ViewController: NSViewController{
             task.standardOutput = output
             
             task.launchPath = "/usr/bin/unzip"
-            task.arguments = ["-fod\(dir)",path, csvfile]
+            //TBD:  check for existence of old file and abort if it exists.
+            task.arguments = ["-od\(dir)",path, csvfile]
             task.launch()
             
             let fileHandle = output.fileHandleForReading
@@ -60,6 +61,30 @@ class ViewController: NSViewController{
         }
     }
     
+    func parseFile(f: String) -> Void {
+        do {
+            var lines: String
+            var members:[Member] = []
+            try  lines = String(contentsOfFile: f, encoding: NSUTF8StringEncoding)
+            for l in lines.componentsSeparatedByString("\n"){
+                let fields = l.componentsSeparatedByString(",")
+                let id:Int? = Int(fields[0])
+              
+            
+                if let id = id {
+                    let id32:Int32 = Int32(id)
+                    let m = Member(id: id32, name: fields[1], qth: fields[2])
+                    members.append(m)
+                }
+            }
+            self.members = members
+            
+        }
+        catch let error as NSError {
+            print(error.localizedDescription)
+        }
+    }
+    
     func updatedb(urlstr: String){
         //let urlstr = "http://www.naqcc.info/mac_naqcc_mems.zip"
         let url = NSURL(string: urlstr)!
@@ -71,8 +96,8 @@ class ViewController: NSViewController{
             } else {
                 if let csvfile = self.unpackdb(data){
                     NSLog("\(csvfile) has been retrieved")
-                    print(self.members)
-                  
+                    self.parseFile(csvfile)
+                    print("members contains \(self.members.count) items")
                     
                 } else {
                     self.alert("Could not download database for NAQCC at\n\(urlstr).\nFile missing or bad format.")
