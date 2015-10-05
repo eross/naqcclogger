@@ -9,14 +9,14 @@
 import Foundation
 
 class Member: NSObject {
-    var id: Int32 = 42
-    var firstname: String = "Er"
-    var qth: String = "sss"
+    let id: Int32
+    let name: String
+    let qth: String
     
     init(id: Int32, firstname: String, qth: String)
     {
         self.id = id
-        self.firstname = firstname
+        self.name = firstname
         self.qth = qth
         
     }

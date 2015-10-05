@@ -10,7 +10,6 @@ import Cocoa
 
 class Document: NSDocument {
 
-    var members: [Member] = [Member(id: 42, firstname: "Tom", qth: "Springfield")]
     
     override init() {
         super.init()

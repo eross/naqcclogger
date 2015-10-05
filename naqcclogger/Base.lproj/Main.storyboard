@@ -720,9 +720,6 @@
                                                     </connections>
                                                 </tableCellView>
                                             </prototypeCellViews>
-                                            <connections>
-                                                <binding destination="3pl-9o-k5b" name="value" keyPath="arrangedObjects" id="IKc-IF-q1g"/>
-                                            </connections>
                                         </tableColumn>
                                         <tableColumn width="112.015625" minWidth="40" maxWidth="1000" id="jdj-6D-YcC">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="name">
@@ -810,8 +807,8 @@
                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </clipView>
                         <animations/>
-                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="bAa-hG-Tcg">
-                            <rect key="frame" x="1" y="284" width="449" height="15"/>
+                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="0.25" horizontal="YES" id="bAa-hG-Tcg">
+                            <rect key="frame" x="1" y="287" width="409" height="15"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <animations/>
                         </scroller>
@@ -830,7 +827,7 @@
                 <customObject id="2Tp-Fl-jBw" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <arrayController objectClassName="naqcclogger.Member" editable="NO" id="3pl-9o-k5b">
                     <connections>
-                        <binding destination="5gI-5U-AMq" name="contentArray" keyPath="self.representedObject" id="Epb-7J-VTu"/>
+                        <binding destination="5gI-5U-AMq" name="contentArray" keyPath="self.members" id="wsN-LH-I0d"/>
                     </connections>
                 </arrayController>
             </objects>

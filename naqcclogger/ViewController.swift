@@ -11,6 +11,7 @@ import Cocoa
 
 class ViewController: NSViewController{
 
+    dynamic var members: [Member] = [Member(id: 42, firstname: "Tom", qth: "Springfield")]
     
     func alert(msg: String){
         dispatch_sync(dispatch_get_main_queue(), { () -> Void in
@@ -70,6 +71,7 @@ class ViewController: NSViewController{
             } else {
                 if let csvfile = self.unpackdb(data){
                     NSLog("\(csvfile) has been retrieved")
+                    print(self.members)
                   
                     
                 } else {
