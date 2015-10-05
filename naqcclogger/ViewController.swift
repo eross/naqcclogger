@@ -11,7 +11,8 @@ import Cocoa
 
 class ViewController: NSViewController{
 
-    dynamic var members: [Member] = [Member(id: 42, name: "Tom", qth: "Springfield")]
+    dynamic var members: [Member] = []
+    //var members: [Member] = [Member(id: 42, name: "Tom", qth: "Springfield")]
     
     func alert(msg: String){
         dispatch_sync(dispatch_get_main_queue(), { () -> Void in
@@ -61,32 +62,30 @@ class ViewController: NSViewController{
         }
     }
     
-    func parseFile(f: String) -> Void {
+    func parseFile(f: String) -> [Member] {
+        var members:[Member] = []
         do {
             var lines: String
-            var members:[Member] = []
+
             try  lines = String(contentsOfFile: f, encoding: NSUTF8StringEncoding)
             for l in lines.componentsSeparatedByString("\n"){
                 let fields = l.componentsSeparatedByString(",")
                 let id:Int? = Int(fields[0])
-              
-            
                 if let id = id {
                     let id32:Int32 = Int32(id)
                     let m = Member(id: id32, name: fields[1], qth: fields[2])
                     members.append(m)
                 }
             }
-            self.members = members
-            
         }
         catch let error as NSError {
             print(error.localizedDescription)
         }
+        return members
     }
     
     func updatedb(urlstr: String){
-        //let urlstr = "http://www.naqcc.info/mac_naqcc_mems.zip"
+
         let url = NSURL(string: urlstr)!
         
         let task = NSURLSession.sharedSession().downloadTaskWithURL(url) { (data, response, error) -> Void in
@@ -96,8 +95,11 @@ class ViewController: NSViewController{
             } else {
                 if let csvfile = self.unpackdb(data){
                     NSLog("\(csvfile) has been retrieved")
-                    self.parseFile(csvfile)
-                    print("members contains \(self.members.count) items")
+                    let members = self.parseFile(csvfile)
+                    // on main queue
+                    NSOperationQueue.mainQueue().addOperationWithBlock({ () -> Void in
+                        self.members = members
+                    })
                     
                 } else {
                     self.alert("Could not download database for NAQCC at\n\(urlstr).\nFile missing or bad format.")
@@ -109,7 +111,9 @@ class ViewController: NSViewController{
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        updatedb("http://www.kb7td.com/mac_naqcc_mems.zip")
+        let urlstr = "http://www.naqcc.info/mac_naqcc_mems.zip"
+        //let urlstr = "http://www.kb7td.com/mac_naqcc_mems.zip"
+        updatedb(urlstr)
     }
 
     override var representedObject: AnyObject? {
