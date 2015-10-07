@@ -10,7 +10,6 @@
 		16717AB71BB796E6005B0D75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16717AB61BB796E6005B0D75 /* AppDelegate.swift */; };
 		16717AB91BB796E6005B0D75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16717AB81BB796E6005B0D75 /* ViewController.swift */; };
 		16717ABB1BB796E6005B0D75 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16717ABA1BB796E6005B0D75 /* Document.swift */; };
-		16717AC01BB796E6005B0D75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16717ABF1BB796E6005B0D75 /* Assets.xcassets */; };
 		16717AC31BB796E6005B0D75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16717AC11BB796E6005B0D75 /* Main.storyboard */; };
 		16717ACE1BB796E6005B0D75 /* naqccloggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16717ACD1BB796E6005B0D75 /* naqccloggerTests.swift */; };
 		16717AD91BB796E6005B0D75 /* naqccloggerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16717AD81BB796E6005B0D75 /* naqccloggerUITests.swift */; };
@@ -35,11 +34,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1632AABF1BC4D5F800F963C9 /* naqcclogger.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = naqcclogger.entitlements; sourceTree = "<group>"; };
 		16717AB31BB796E6005B0D75 /* naqcclogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = naqcclogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16717AB61BB796E6005B0D75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16717AB81BB796E6005B0D75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		16717ABA1BB796E6005B0D75 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
-		16717ABF1BB796E6005B0D75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16717AC21BB796E6005B0D75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		16717AC41BB796E6005B0D75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16717AC91BB796E6005B0D75 /* naqccloggerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = naqccloggerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,10 +99,10 @@
 		16717AB51BB796E6005B0D75 /* naqcclogger */ = {
 			isa = PBXGroup;
 			children = (
+				1632AABF1BC4D5F800F963C9 /* naqcclogger.entitlements */,
 				16717AB61BB796E6005B0D75 /* AppDelegate.swift */,
 				16717AB81BB796E6005B0D75 /* ViewController.swift */,
 				16717ABA1BB796E6005B0D75 /* Document.swift */,
-				16717ABF1BB796E6005B0D75 /* Assets.xcassets */,
 				16717AC11BB796E6005B0D75 /* Main.storyboard */,
 				16717AC41BB796E6005B0D75 /* Info.plist */,
 				16717AEF1BB8EC3A005B0D75 /* Member.swift */,
@@ -203,6 +202,12 @@
 				TargetAttributes = {
 					16717AB21BB796E6005B0D75 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = M2LWJAM9ML;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 					16717AC81BB796E6005B0D75 = {
 						CreatedOnToolsVersion = 7.0;
@@ -239,7 +244,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16717AC01BB796E6005B0D75 /* Assets.xcassets in Resources */,
 				16717AC31BB796E6005B0D75 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,7 +402,8 @@
 		16717ADE1BB796E6005B0D75 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = naqcclogger/naqcclogger.entitlements;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -415,7 +420,8 @@
 		16717ADF1BB796E6005B0D75 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = naqcclogger/naqcclogger.entitlements;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
