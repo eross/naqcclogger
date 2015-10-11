@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		160E8B061BCAAFB8009AF03E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160E8B051BCAAFB8009AF03E /* AppDelegate.swift */; };
 		160E8B081BCAAFB8009AF03E /* LogDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160E8B071BCAAFB8009AF03E /* LogDocument.swift */; };
-		160E8B0B1BCAAFB8009AF03E /* Document.xib in Resources */ = {isa = PBXBuildFile; fileRef = 160E8B091BCAAFB8009AF03E /* Document.xib */; };
+		160E8B0B1BCAAFB8009AF03E /* LogDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 160E8B091BCAAFB8009AF03E /* LogDocument.xib */; };
 		160E8B0E1BCAAFB8009AF03E /* Document.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 160E8B0C1BCAAFB8009AF03E /* Document.xcdatamodeld */; };
 		160E8B101BCAAFB8009AF03E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 160E8B0F1BCAAFB8009AF03E /* Assets.xcassets */; };
 		160E8B131BCAAFB8009AF03E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 160E8B111BCAAFB8009AF03E /* MainMenu.xib */; };
@@ -40,7 +40,7 @@
 		160E8B021BCAAFB8009AF03E /* naqcclogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = naqcclogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		160E8B051BCAAFB8009AF03E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		160E8B071BCAAFB8009AF03E /* LogDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogDocument.swift; sourceTree = "<group>"; };
-		160E8B0A1BCAAFB8009AF03E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Document.xib; sourceTree = "<group>"; };
+		160E8B0A1BCAAFB8009AF03E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LogDocument.xib; sourceTree = "<group>"; };
 		160E8B0D1BCAAFB8009AF03E /* Document.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Document.xcdatamodel; sourceTree = "<group>"; };
 		160E8B0F1BCAAFB8009AF03E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		160E8B121BCAAFB8009AF03E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -107,7 +107,7 @@
 				16B1ECAA1BCAB40200A6C2A1 /* ViewController.swift */,
 				160E8B051BCAAFB8009AF03E /* AppDelegate.swift */,
 				160E8B071BCAAFB8009AF03E /* LogDocument.swift */,
-				160E8B091BCAAFB8009AF03E /* Document.xib */,
+				160E8B091BCAAFB8009AF03E /* LogDocument.xib */,
 				160E8B0F1BCAAFB8009AF03E /* Assets.xcassets */,
 				160E8B111BCAAFB8009AF03E /* MainMenu.xib */,
 				160E8B141BCAAFB8009AF03E /* Info.plist */,
@@ -238,7 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				160E8B101BCAAFB8009AF03E /* Assets.xcassets in Resources */,
-				160E8B0B1BCAAFB8009AF03E /* Document.xib in Resources */,
+				160E8B0B1BCAAFB8009AF03E /* LogDocument.xib in Resources */,
 				160E8B131BCAAFB8009AF03E /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,12 +304,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		160E8B091BCAAFB8009AF03E /* Document.xib */ = {
+		160E8B091BCAAFB8009AF03E /* LogDocument.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				160E8B0A1BCAAFB8009AF03E /* Base */,
 			);
-			name = Document.xib;
+			name = LogDocument.xib;
 			sourceTree = "<group>";
 		};
 		160E8B111BCAAFB8009AF03E /* MainMenu.xib */ = {
