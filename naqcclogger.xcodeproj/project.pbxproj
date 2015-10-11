@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		160E8B061BCAAFB8009AF03E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160E8B051BCAAFB8009AF03E /* AppDelegate.swift */; };
+		160E8B081BCAAFB8009AF03E /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160E8B071BCAAFB8009AF03E /* Document.swift */; };
+		160E8B0B1BCAAFB8009AF03E /* Document.xib in Resources */ = {isa = PBXBuildFile; fileRef = 160E8B091BCAAFB8009AF03E /* Document.xib */; };
+		160E8B0E1BCAAFB8009AF03E /* Document.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 160E8B0C1BCAAFB8009AF03E /* Document.xcdatamodeld */; };
+		160E8B101BCAAFB8009AF03E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 160E8B0F1BCAAFB8009AF03E /* Assets.xcassets */; };
+		160E8B131BCAAFB8009AF03E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 160E8B111BCAAFB8009AF03E /* MainMenu.xib */; };
+		160E8B1E1BCAAFB8009AF03E /* naqccloggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160E8B1D1BCAAFB8009AF03E /* naqccloggerTests.swift */; };
+		160E8B291BCAAFB8009AF03E /* naqccloggerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160E8B281BCAAFB8009AF03E /* naqccloggerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		160E8B1A1BCAAFB8009AF03E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 160E8AFA1BCAAFB8009AF03E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 160E8B011BCAAFB8009AF03E;
+			remoteInfo = naqcclogger;
+		};
+		160E8B251BCAAFB8009AF03E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 160E8AFA1BCAAFB8009AF03E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 160E8B011BCAAFB8009AF03E;
+			remoteInfo = naqcclogger;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		160E8B021BCAAFB8009AF03E /* naqcclogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = naqcclogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		160E8B051BCAAFB8009AF03E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		160E8B071BCAAFB8009AF03E /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		160E8B0A1BCAAFB8009AF03E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Document.xib; sourceTree = "<group>"; };
+		160E8B0D1BCAAFB8009AF03E /* Document.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Document.xcdatamodel; sourceTree = "<group>"; };
+		160E8B0F1BCAAFB8009AF03E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		160E8B121BCAAFB8009AF03E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		160E8B141BCAAFB8009AF03E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		160E8B191BCAAFB8009AF03E /* naqccloggerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = naqccloggerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		160E8B1D1BCAAFB8009AF03E /* naqccloggerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = naqccloggerTests.swift; sourceTree = "<group>"; };
+		160E8B1F1BCAAFB8009AF03E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		160E8B241BCAAFB8009AF03E /* naqccloggerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = naqccloggerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		160E8B281BCAAFB8009AF03E /* naqccloggerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = naqccloggerUITests.swift; sourceTree = "<group>"; };
+		160E8B2A1BCAAFB8009AF03E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		160E8AFF1BCAAFB8009AF03E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		160E8B161BCAAFB8009AF03E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		160E8B211BCAAFB8009AF03E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		160E8AF91BCAAFB8009AF03E = {
+			isa = PBXGroup;
+			children = (
+				160E8B041BCAAFB8009AF03E /* naqcclogger */,
+				160E8B1C1BCAAFB8009AF03E /* naqccloggerTests */,
+				160E8B271BCAAFB8009AF03E /* naqccloggerUITests */,
+				160E8B031BCAAFB8009AF03E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		160E8B031BCAAFB8009AF03E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				160E8B021BCAAFB8009AF03E /* naqcclogger.app */,
+				160E8B191BCAAFB8009AF03E /* naqccloggerTests.xctest */,
+				160E8B241BCAAFB8009AF03E /* naqccloggerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		160E8B041BCAAFB8009AF03E /* naqcclogger */ = {
+			isa = PBXGroup;
+			children = (
+				160E8B051BCAAFB8009AF03E /* AppDelegate.swift */,
+				160E8B071BCAAFB8009AF03E /* Document.swift */,
+				160E8B091BCAAFB8009AF03E /* Document.xib */,
+				160E8B0F1BCAAFB8009AF03E /* Assets.xcassets */,
+				160E8B111BCAAFB8009AF03E /* MainMenu.xib */,
+				160E8B141BCAAFB8009AF03E /* Info.plist */,
+				160E8B0C1BCAAFB8009AF03E /* Document.xcdatamodeld */,
+			);
+			path = naqcclogger;
+			sourceTree = "<group>";
+		};
+		160E8B1C1BCAAFB8009AF03E /* naqccloggerTests */ = {
+			isa = PBXGroup;
+			children = (
+				160E8B1D1BCAAFB8009AF03E /* naqccloggerTests.swift */,
+				160E8B1F1BCAAFB8009AF03E /* Info.plist */,
+			);
+			path = naqccloggerTests;
+			sourceTree = "<group>";
+		};
+		160E8B271BCAAFB8009AF03E /* naqccloggerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				160E8B281BCAAFB8009AF03E /* naqccloggerUITests.swift */,
+				160E8B2A1BCAAFB8009AF03E /* Info.plist */,
+			);
+			path = naqccloggerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		160E8B011BCAAFB8009AF03E /* naqcclogger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 160E8B2D1BCAAFB8009AF03E /* Build configuration list for PBXNativeTarget "naqcclogger" */;
+			buildPhases = (
+				160E8AFE1BCAAFB8009AF03E /* Sources */,
+				160E8AFF1BCAAFB8009AF03E /* Frameworks */,
+				160E8B001BCAAFB8009AF03E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = naqcclogger;
+			productName = naqcclogger;
+			productReference = 160E8B021BCAAFB8009AF03E /* naqcclogger.app */;
+			productType = "com.apple.product-type.application";
+		};
+		160E8B181BCAAFB8009AF03E /* naqccloggerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 160E8B301BCAAFB8009AF03E /* Build configuration list for PBXNativeTarget "naqccloggerTests" */;
+			buildPhases = (
+				160E8B151BCAAFB8009AF03E /* Sources */,
+				160E8B161BCAAFB8009AF03E /* Frameworks */,
+				160E8B171BCAAFB8009AF03E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				160E8B1B1BCAAFB8009AF03E /* PBXTargetDependency */,
+			);
+			name = naqccloggerTests;
+			productName = naqccloggerTests;
+			productReference = 160E8B191BCAAFB8009AF03E /* naqccloggerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		160E8B231BCAAFB8009AF03E /* naqccloggerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 160E8B331BCAAFB8009AF03E /* Build configuration list for PBXNativeTarget "naqccloggerUITests" */;
+			buildPhases = (
+				160E8B201BCAAFB8009AF03E /* Sources */,
+				160E8B211BCAAFB8009AF03E /* Frameworks */,
+				160E8B221BCAAFB8009AF03E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				160E8B261BCAAFB8009AF03E /* PBXTargetDependency */,
+			);
+			name = naqccloggerUITests;
+			productName = naqccloggerUITests;
+			productReference = 160E8B241BCAAFB8009AF03E /* naqccloggerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		160E8AFA1BCAAFB8009AF03E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Eric Ross";
+				TargetAttributes = {
+					160E8B011BCAAFB8009AF03E = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					160E8B181BCAAFB8009AF03E = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 160E8B011BCAAFB8009AF03E;
+					};
+					160E8B231BCAAFB8009AF03E = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 160E8B011BCAAFB8009AF03E;
+					};
+				};
+			};
+			buildConfigurationList = 160E8AFD1BCAAFB8009AF03E /* Build configuration list for PBXProject "naqcclogger" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 160E8AF91BCAAFB8009AF03E;
+			productRefGroup = 160E8B031BCAAFB8009AF03E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				160E8B011BCAAFB8009AF03E /* naqcclogger */,
+				160E8B181BCAAFB8009AF03E /* naqccloggerTests */,
+				160E8B231BCAAFB8009AF03E /* naqccloggerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		160E8B001BCAAFB8009AF03E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				160E8B101BCAAFB8009AF03E /* Assets.xcassets in Resources */,
+				160E8B0B1BCAAFB8009AF03E /* Document.xib in Resources */,
+				160E8B131BCAAFB8009AF03E /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		160E8B171BCAAFB8009AF03E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		160E8B221BCAAFB8009AF03E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		160E8AFE1BCAAFB8009AF03E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				160E8B0E1BCAAFB8009AF03E /* Document.xcdatamodeld in Sources */,
+				160E8B081BCAAFB8009AF03E /* Document.swift in Sources */,
+				160E8B061BCAAFB8009AF03E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		160E8B151BCAAFB8009AF03E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				160E8B1E1BCAAFB8009AF03E /* naqccloggerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		160E8B201BCAAFB8009AF03E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				160E8B291BCAAFB8009AF03E /* naqccloggerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		160E8B1B1BCAAFB8009AF03E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 160E8B011BCAAFB8009AF03E /* naqcclogger */;
+			targetProxy = 160E8B1A1BCAAFB8009AF03E /* PBXContainerItemProxy */;
+		};
+		160E8B261BCAAFB8009AF03E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 160E8B011BCAAFB8009AF03E /* naqcclogger */;
+			targetProxy = 160E8B251BCAAFB8009AF03E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		160E8B091BCAAFB8009AF03E /* Document.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				160E8B0A1BCAAFB8009AF03E /* Base */,
+			);
+			name = Document.xib;
+			sourceTree = "<group>";
+		};
+		160E8B111BCAAFB8009AF03E /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				160E8B121BCAAFB8009AF03E /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		160E8B2B1BCAAFB8009AF03E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		160E8B2C1BCAAFB8009AF03E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		160E8B2E1BCAAFB8009AF03E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = naqcclogger/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kb7td.naqcclogger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		160E8B2F1BCAAFB8009AF03E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = naqcclogger/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kb7td.naqcclogger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		160E8B311BCAAFB8009AF03E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = naqccloggerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kb7td.naqccloggerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/naqcclogger.app/Contents/MacOS/naqcclogger";
+			};
+			name = Debug;
+		};
+		160E8B321BCAAFB8009AF03E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = naqccloggerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kb7td.naqccloggerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/naqcclogger.app/Contents/MacOS/naqcclogger";
+			};
+			name = Release;
+		};
+		160E8B341BCAAFB8009AF03E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = naqccloggerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kb7td.naqccloggerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = naqcclogger;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		160E8B351BCAAFB8009AF03E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = naqccloggerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kb7td.naqccloggerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = naqcclogger;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		160E8AFD1BCAAFB8009AF03E /* Build configuration list for PBXProject "naqcclogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				160E8B2B1BCAAFB8009AF03E /* Debug */,
+				160E8B2C1BCAAFB8009AF03E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		160E8B2D1BCAAFB8009AF03E /* Build configuration list for PBXNativeTarget "naqcclogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				160E8B2E1BCAAFB8009AF03E /* Debug */,
+				160E8B2F1BCAAFB8009AF03E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		160E8B301BCAAFB8009AF03E /* Build configuration list for PBXNativeTarget "naqccloggerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				160E8B311BCAAFB8009AF03E /* Debug */,
+				160E8B321BCAAFB8009AF03E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		160E8B331BCAAFB8009AF03E /* Build configuration list for PBXNativeTarget "naqccloggerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				160E8B341BCAAFB8009AF03E /* Debug */,
+				160E8B351BCAAFB8009AF03E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		160E8B0C1BCAAFB8009AF03E /* Document.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				160E8B0D1BCAAFB8009AF03E /* Document.xcdatamodel */,
+			);
+			currentVersion = 160E8B0D1BCAAFB8009AF03E /* Document.xcdatamodel */;
+			path = Document.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 160E8AFA1BCAAFB8009AF03E /* Project object */;
+}
