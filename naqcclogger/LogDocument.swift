@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class Document: NSPersistentDocument {
+class LogDocument: NSPersistentDocument {
 
     override init() {
         super.init()
