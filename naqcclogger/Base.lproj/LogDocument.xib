@@ -27,5 +27,10 @@
                 <outlet property="delegate" destination="-2" id="0bl-1N-x8E"/>
             </connections>
         </window>
+        <arrayController mode="entity" entityName="Member" automaticallyPreparesContent="YES" id="skt-FQ-exA">
+            <connections>
+                <binding destination="-2" name="managedObjectContext" keyPath="managedObjectContext" id="yMy-Sd-aq3"/>
+            </connections>
+        </arrayController>
     </objects>
 </document>
