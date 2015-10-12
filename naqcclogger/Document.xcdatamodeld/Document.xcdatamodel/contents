@@ -15,7 +15,7 @@
         <attribute name="qth" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="LogEntry" positionX="-54" positionY="18" width="128" height="150"/>
+        <element name="LogEntry" positionX="115" positionY="-24" width="128" height="150"/>
         <element name="Member" positionX="-63" positionY="-18" width="128" height="90"/>
     </elements>
 </model>
