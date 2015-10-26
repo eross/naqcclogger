@@ -359,6 +359,9 @@
                                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                             </textFieldCell>
+                                                            <connections>
+                                                                <binding destination="fvL-No-HRx" name="value" keyPath="objectValue.multiplier" id="u54-9N-kFq"/>
+                                                            </connections>
                                                         </textField>
                                                     </subviews>
                                                     <animations/>
@@ -393,6 +396,9 @@
                                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                             </textFieldCell>
+                                                            <connections>
+                                                                <binding destination="Nbk-rS-5jk" name="value" keyPath="objectValue.points" id="d3V-0A-WBw"/>
+                                                            </connections>
                                                         </textField>
                                                     </subviews>
                                                     <animations/>
