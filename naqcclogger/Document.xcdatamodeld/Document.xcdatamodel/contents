@@ -3,6 +3,7 @@
     <entity name="LogEntry" syncable="YES">
         <attribute name="band" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="callsign" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="comments" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="frequency" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="membership" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="multiplier" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
@@ -19,7 +20,7 @@
         <attribute name="qth" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="LogEntry" positionX="115" positionY="-24" width="128" height="210"/>
+        <element name="LogEntry" positionX="115" positionY="-24" width="128" height="30"/>
         <element name="Member" positionX="-63" positionY="-18" width="128" height="90"/>
     </elements>
 </model>
