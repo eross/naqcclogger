@@ -111,6 +111,7 @@ class ViewController: NSViewController{
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("ViewController:  viewDidLoad()")
         let urlstr = "http://www.naqcc.info/mac_naqcc_mems.zip"
         //let urlstr = "http://www.kb7td.com/mac_naqcc_mems.zip"
         updatedb(urlstr)

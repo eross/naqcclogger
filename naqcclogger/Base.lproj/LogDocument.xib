@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="8191"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9059"/>
         <capability name="box content view" minToolsVersion="7.0"/>
     </dependencies>
     <objects>
@@ -63,7 +63,7 @@
                                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                             </textFieldCell>
                                                             <connections>
-                                                                <binding destination="vJS-02-HRe" name="value" keyPath="objectValue.frequency" id="FZ0-Bv-vw9"/>
+                                                                <binding destination="vJS-02-HRe" name="value" keyPath="objectValue.utctime" id="myx-1P-6GF"/>
                                                             </connections>
                                                         </textField>
                                                     </subviews>
@@ -101,7 +101,7 @@
                                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                             </textFieldCell>
                                                             <connections>
-                                                                <binding destination="EAV-Ya-w4o" name="value" keyPath="objectValue.band" id="48X-mZ-hDd"/>
+                                                                <binding destination="EAV-Ya-w4o" name="value" keyPath="objectValue.frequency" id="bnB-38-d2M"/>
                                                             </connections>
                                                         </textField>
                                                     </subviews>
@@ -577,6 +577,28 @@
                                         <datePickerElements key="datePickerElements" year="YES" month="YES" day="YES" hour="YES" minute="YES" second="YES"/>
                                     </datePickerCell>
                                 </datePicker>
+                                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eDn-sP-z6s">
+                                    <rect key="frame" x="616" y="196" width="65" height="32"/>
+                                    <animations/>
+                                    <buttonCell key="cell" type="push" title="Add" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="aPj-5R-SGQ">
+                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="add:" target="skt-FQ-exA" id="tXQ-fl-whL"/>
+                                    </connections>
+                                </button>
+                                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uKX-Zf-FeX">
+                                    <rect key="frame" x="608" y="169" width="80" height="32"/>
+                                    <animations/>
+                                    <buttonCell key="cell" type="push" title="Delete" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="4vE-MI-7nC">
+                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="remove:" target="skt-FQ-exA" id="U5m-W2-vvb"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <animations/>
                         </view>
@@ -604,7 +626,7 @@
             </connections>
             <point key="canvasLocation" x="403.5" y="559"/>
         </window>
-        <arrayController mode="entity" entityName="LogEntry" automaticallyPreparesContent="YES" id="skt-FQ-exA">
+        <arrayController mode="entity" entityName="LogEntry" automaticallyPreparesContent="YES" id="skt-FQ-exA" userLabel="Cars">
             <connections>
                 <binding destination="-2" name="managedObjectContext" keyPath="managedObjectContext" id="yMy-Sd-aq3"/>
             </connections>
