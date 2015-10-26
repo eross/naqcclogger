@@ -11,10 +11,16 @@ import Cocoa
 class CarController: NSArrayController {
     override func newObject() -> AnyObject {
         let newObj = super.newObject() as! NSObject
+        
         let points = NSNumber(integer: 42)
-        let multiplier = NSNumber(float: 1.0)
         newObj.setValue(points, forKey:"points")
+        
+        let multiplier = NSNumber(float: 1.0)
         newObj.setValue(multiplier, forKey:"multiplier")
+        
+        let band = NSNumber(integer: 20)
+        newObj.setValue(band, forKey: "band")
+        
         print("set points")
         return newObj
     }
