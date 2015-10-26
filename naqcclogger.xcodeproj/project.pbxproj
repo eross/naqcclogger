@@ -15,8 +15,9 @@
 		160E8B131BCAAFB8009AF03E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 160E8B111BCAAFB8009AF03E /* MainMenu.xib */; };
 		160E8B1E1BCAAFB8009AF03E /* naqccloggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160E8B1D1BCAAFB8009AF03E /* naqccloggerTests.swift */; };
 		160E8B291BCAAFB8009AF03E /* naqccloggerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160E8B281BCAAFB8009AF03E /* naqccloggerUITests.swift */; };
-		16B1ECAB1BCAB40200A6C2A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B1ECAA1BCAB40200A6C2A1 /* ViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		16B1ECAD1BCAB40D00A6C2A1 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B1ECAC1BCAB40D00A6C2A1 /* Member.swift */; settings = {ASSET_TAGS = (); }; };
+		16908D0C1BDECEEE009F46D3 /* CarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16908D0B1BDECEEE009F46D3 /* CarController.swift */; };
+		16B1ECAB1BCAB40200A6C2A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B1ECAA1BCAB40200A6C2A1 /* ViewController.swift */; };
+		16B1ECAD1BCAB40D00A6C2A1 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B1ECAC1BCAB40D00A6C2A1 /* Member.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		160E8B241BCAAFB8009AF03E /* naqccloggerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = naqccloggerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		160E8B281BCAAFB8009AF03E /* naqccloggerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = naqccloggerUITests.swift; sourceTree = "<group>"; };
 		160E8B2A1BCAAFB8009AF03E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16908D0B1BDECEEE009F46D3 /* CarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarController.swift; sourceTree = "<group>"; };
 		16B1ECAA1BCAB40200A6C2A1 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		16B1ECAC1BCAB40D00A6C2A1 /* Member.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,6 +114,7 @@
 				160E8B111BCAAFB8009AF03E /* MainMenu.xib */,
 				160E8B141BCAAFB8009AF03E /* Info.plist */,
 				160E8B0C1BCAAFB8009AF03E /* Document.xcdatamodeld */,
+				16908D0B1BDECEEE009F46D3 /* CarController.swift */,
 			);
 			path = naqcclogger;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 				160E8B081BCAAFB8009AF03E /* LogDocument.swift in Sources */,
 				16B1ECAB1BCAB40200A6C2A1 /* ViewController.swift in Sources */,
 				160E8B061BCAAFB8009AF03E /* AppDelegate.swift in Sources */,
+				16908D0C1BDECEEE009F46D3 /* CarController.swift in Sources */,
 				16B1ECAD1BCAB40D00A6C2A1 /* Member.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
